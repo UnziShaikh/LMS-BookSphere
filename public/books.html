@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Books - LMS BookSphere</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav>
+    <a href="/index.html">Home</a>
+    <a href="/auth.html">Auth</a>
+    <a href="/books.html" class="active">Books</a>
+  </nav>
+  <main>
+    <section class="card">
+      <div class="row">
+        <h2>Books</h2>
+        <div>
+          <button id="refreshBooks" class="btn">Refresh</button>
+          <button id="logoutBtn" class="btn ghost">Logout</button>
+        </div>
+      </div>
+      <div id="booksList"></div>
+    </section>
+
+    <section class="card" id="adminSection" style="display:none;">
+      <h2>Admin: Create / Update Book</h2>
+      <form id="createBookForm">
+        <input name="title" placeholder="Title" required />
+        <input name="author" placeholder="Author" required />
+        <input name="category" placeholder="Category" required />
+        <input name="availableCopies" placeholder="Available Copies" type="number" min="0" value="1" />
+        <button type="submit" class="btn">Create</button>
+      </form>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

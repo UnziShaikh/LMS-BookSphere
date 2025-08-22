@@ -1,4 +1,4 @@
-# LMS Lilac - Perfect Library Management System
+# LMS BookSphere - Perfect Library Management System
 
 Features:
 - Register / Login (JWT) with roles (admin/user)
